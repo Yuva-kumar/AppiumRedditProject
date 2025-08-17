@@ -1,5 +1,7 @@
 package com.uber.test;
 
+import com.beust.ah.A;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -33,7 +35,17 @@ public class AppTest{
         driver = new AppiumDriver(url, cap);
 
         System.out.println("application is started");
+
+//        driver.findElement(new AppiumBy.ByAndroidUIAutomator("new "));
     }
 }
+
+
+
+
+//
+//export ANDROID_HOME=/home/yuva/Android/Sdk
+//export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
+//export ANDROID_SDK_ROOT=/home/yuva/Android/Sdk
 
 
